@@ -19,9 +19,187 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+.group {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 0;
+  margin: 0;
+}
+
+.rock {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+li {
+  list-style-type: none;
+  color: #3783a3;
+  text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.img {
+  padding-top: .5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.imitate {
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: .3rem;
+  border: .2rem solid #3783a3;
+  text-decoration: none;
+  padding: .5em 1em .6em;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e2e2e2;
+}
+
+a {
+  color: #3783a3;
+  font-size: 1.125rem;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article,
+  main {
+    display: grid;
+    grid-column: 1 / 4;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  header,
+  .group {
+    text-align: left;
+  }
+
+  .group {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .intro {
+    width: 83%;
+    margin-left: 3rem;
+  }
+
+  div {
+    display: grid;
+  }
+
+  .img {
+    padding-top: 0;
+  }
+
+  header {
+    display: flex;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  .viewing {
+    padding-top: 1.5rem;
+  }
+
+  .gravel {
+    padding-top: 1.5rem;
+  }
+
+  .symbolism {
+    padding-top: 1.5rem;
+  }
+
+  .imitate {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    display: flex;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .intro {
+    max-width: 60%;
+    margin-left: 10rem;
+  }
+
 }
